@@ -1,4 +1,4 @@
-package datastructure.set;
+package datastructure;
 
 import java.io.FileInputStream;
 import java.util.ArrayList;

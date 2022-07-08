@@ -18,19 +18,26 @@ public class Main {
 //
 //        bst.postOrder();
 //        System.out.println();
-//        System.out.println(bst);
+//        System.out.println(bst);429 
 
+//        BST<Integer> bst = new BST<>();
+//        Random random = new Random();
+//
+//        int n = 5;
+//        int[] bst_num = {2, 5, 6, 8, 7};
+//        for(int i=0; i<n; i++)
+//            bst.add(bst_num[i]);
+//        System.out.println(bst.size());
+//        ArrayList<Integer> nums = new ArrayList<>();
+//        while (!bst.isEmpty())
+//            nums.add(bst.removeMin());
+//        System.out.println(nums);
+
+        int[] nums = {5, 3, 6, 8, 4, 2};
         BST<Integer> bst = new BST<>();
-        Random random = new Random();
-
-        int n = 5;
-        int[] bst_num = {2, 5, 6, 8, 7};
-        for(int i=0; i<n; i++)
-            bst.add(bst_num[i]);
-        System.out.println(bst.size());
-        ArrayList<Integer> nums = new ArrayList<>();
-        while (!bst.isEmpty())
-            nums.add(bst.removeMin());
-        System.out.println(nums);
+        for(int num: nums)
+            bst.add(num);
+        System.out.println(bst.contains(3));
+        System.out.println(bst.contains(88));
     }
 }
